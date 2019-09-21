@@ -15,5 +15,11 @@ module Sample
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    config.generators.template_engine = :slim
+
+    config.generators do |g|
+      g.helper false
+      g.assets false
+    end
   end
 end
